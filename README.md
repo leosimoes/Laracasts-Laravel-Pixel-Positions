@@ -14,6 +14,20 @@ import './bootstrap';
 import.meta.glob(['../images/**']);
 ```
 
+- In the terminal, I ran the command `npm run build` to generate the `build` folder (and its files) inside `public`.
+- I created the `components` directory in `resources/views`.
+- In `resources/views/components`, I created the file `layout.blade.php`.
+- In `resources/views`, I created the file `home.blade.php` with `<x-layout>Home Page</x-layout>`.
+- In `routes/web.php`:
+  * I changed the route of the `welcome` page to `/welcome`;
+  * I added the route of the `home` page to `/`.
+- I accessed the application's home page using the URL provided by Laravel Herd.
+  `http://laracasts-laravel-pixel-positions.test/`.
+
+![Image-01-LaravelHerd](./images/Image-01-LaravelHerd.png)
+
+![Image-02-Home-v1](./images/Image-02-Home-v1.png)
+
 
 ## References
 Laracast - 30 Days to Learn Laravel
