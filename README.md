@@ -4,6 +4,8 @@ Final project for the **30 Days to Learn Laravel** course from **Laracast**.
 
 ## Development
 
+### Front-end
+
 - I created a subdirectory called `images` in `resources`;
 - I downloaded the file [logo.svg](https://github.com/laracasts/pixel-position/blob/main/resources/images/logo.svg)
   and placed it in `resources/images`;
@@ -55,6 +57,15 @@ module.exports = {
     plugins: [],
 }
 ```
+
+
+### Back-end
+- In `database/migrations`, I changed `0001_01_01_000002_create_jobs_table.php`:
+  * renamed the file to `0001_01_01_000002_create_queued_jobs_table.php`
+  * renamed the table names:
+  * `jobs` to `queued_jobs`;
+  * `job_batches` to `queued_job_batches`;
+  * `failed_jobs` to `queued_failed_jobs`.
 
 
 ## References
