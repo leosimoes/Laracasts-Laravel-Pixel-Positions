@@ -28,6 +28,23 @@ import.meta.glob(['../images/**']);
 
 ![Image-02-Home-v1](./images/Image-02-Home-v1.png)
 
+- Verifiquei se o Tailwind está instalado conforme o 
+  [guia](https://tailwindcss.com/docs/installation/framework-guides/laravel/vite):
+  * Em `vite.config.js` deve ter `tailwindcss` importado no início e chamado em plugins:
+```javascript
+// ...
+import tailwindcss from '@tailwindcss/vite';
+export default defineConfig({
+    plugins: [
+        // ...
+        tailwindcss(),
+    ],
+});
+```
+  * Em `resources/css/app.css` deve ter `@import 'tailwindcss';`.
+  * Em `layout.blade.php` deve ter `@vite('resources/css/app.css')` ou 
+    `@vite(['resources/js/app.js', 'resources/css/app.css'])`.
+
 
 ## Referências
 Laracast - 30 Days to Learn Laravel
@@ -44,3 +61,6 @@ https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/29
 
 Laracast - The Everything Episode
 https://laracasts.com/series/30-days-to-learn-laravel-11/episodes/30
+
+Tailwind - Docs - Installation - Framework guides - Laravel
+https://tailwindcss.com/docs/installation/framework-guides/laravel/vite
