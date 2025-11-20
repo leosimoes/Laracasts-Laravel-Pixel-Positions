@@ -45,6 +45,17 @@ export default defineConfig({
   * In `layout.blade.php` there must be `@vite('resources/css/app.css')` or
   `@vite(['resources/js/app.js', 'resources/css/app.css'])`.
 
+- I created the `tailwind.config.css` file:
+```javascript
+module.exports = {
+    content: ['./resources/**/*.blade.php', './resources/**/*.js'],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+}
+```
+
 
 ## References
 Laracast - 30 Days to Learn Laravel
